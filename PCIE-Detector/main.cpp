@@ -1,6 +1,7 @@
 #pragma warning(disable : 4996)
 #include <ntddk.h>
 
+// https://www.vergiliusproject.com/kernels/x64/windows-xp/sp2/_PCI_COMMON_CONFIG
 typedef struct _PCI_COMMON_CONFIG_CUSTOM {
     USHORT  VendorID;                   // (ro)
     USHORT  DeviceID;                   // (ro)
