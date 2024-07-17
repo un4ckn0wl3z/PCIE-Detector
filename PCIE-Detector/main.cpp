@@ -32,8 +32,8 @@ typedef struct _PCI_COMMON_CONFIG_CUSTOM {
     UCHAR   DeviceSpecific[192];
 } PCI_COMMON_CONFIG_CUSTOM, * PPCI_COMMON_CONFIG_CUSTOM;
 
-#define VENDOR_ID_TO_DETECT 0x10EE
-#define DEVICE_ID_TO_DETECT 0x0666
+#define VENDOR_ID_TO_DETECT 0x10EE // Default Vendor ID from pcileech
+#define DEVICE_ID_TO_DETECT 0x0666 // Default Device ID from pcileech
 
 NTSTATUS ReadPCIConfigSpace(
     IN ULONG BusNumber,
